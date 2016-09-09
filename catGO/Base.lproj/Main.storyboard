@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="catGO" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRr-Wj-cfq">
+                                <rect key="frame" x="133" y="318" width="109" height="30"/>
+                                <state key="normal" title="Connect to Myo"/>
+                                <connections>
+                                    <action selector="ConnectToMyo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uUp-vw-mwP"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="dHP-Td-geM">
+                                <rect key="frame" x="63" y="33" width="248" height="248"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dHP-Td-geM" secondAttribute="height" multiplier="1:1" id="vGO-Sb-3Wv"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monsterBall.png" translatesAutoresizingMaskIntoConstraints="NO" id="oJW-S2-OgG">
+                                <rect key="frame" x="123" y="510" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oJW-S2-OgG" secondAttribute="height" multiplier="1:1" id="MVG-dS-wye"/>
+                                </constraints>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lock On!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTP-2h-drF">
+                                <rect key="frame" x="37" y="465" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="FIt-Ym-IeY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUp-Jj-nhW">
+                                <rect key="frame" x="167.5" y="318.5" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u81-J9-PGW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="oJW-S2-OgG" secondAttribute="trailing" constant="108" id="9S9-aK-LNh"/>
+                            <constraint firstItem="HTP-2h-drF" firstAttribute="centerX" secondItem="rRr-Wj-cfq" secondAttribute="centerX" id="C3A-u7-Qrd"/>
+                            <constraint firstItem="dHP-Td-geM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="13" id="HdW-Ny-OOH"/>
+                            <constraint firstItem="dHP-Td-geM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="47" id="SyZ-Nq-mcV"/>
+                            <constraint firstItem="rRr-Wj-cfq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vzz-1A-FlC"/>
+                            <constraint firstItem="oJW-S2-OgG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="107" id="gjq-WH-68Y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dHP-Td-geM" secondAttribute="trailing" constant="48" id="itb-08-Lwe"/>
+                            <constraint firstItem="HTP-2h-drF" firstAttribute="top" secondItem="rRr-Wj-cfq" secondAttribute="bottom" constant="117" id="kw1-ht-UpV"/>
+                            <constraint firstItem="SUp-Jj-nhW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pPC-eK-R5d"/>
+                            <constraint firstItem="rRr-Wj-cfq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="t3w-1I-dz6"/>
+                            <constraint firstItem="SUp-Jj-nhW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tzb-Um-3VX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oJW-S2-OgG" secondAttribute="bottom" constant="29" id="xlb-XF-4J1"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="ballImage" destination="oJW-S2-OgG" id="Rns-jR-q3g"/>
+                        <outlet property="catImage" destination="dHP-Td-geM" id="bUB-ct-SZZ"/>
+                        <outlet property="messageLabel" destination="HTP-2h-drF" id="3fR-jn-L2B"/>
+                        <outlet property="myoButton" destination="rRr-Wj-cfq" id="Dfp-pW-Xy6"/>
+                        <outlet property="resetButton" destination="SUp-Jj-nhW" id="A8y-mw-bU2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="279.5" y="305.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat.png" width="512" height="512"/>
+        <image name="monsterBall.png" width="700" height="700"/>
+    </resources>
+</document>
